@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2K25</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      
+      color: #fff;
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: gold;
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .menu-icon {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 30px;
+      cursor: pointer;
+      color: gold;
+    }
+
+    .tray {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 80%;
+      max-width: 300px;
+      height: 100vh;
+      background-color: #111;
+      color: white;
+      padding: 20px;
+      transition: left 0.3s ease;
+      z-index: 100;
+    }
+
+    .tray.active {
+      left: 0;
+    }
+
+    .tray input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    .tray a {
+      display: block;
+      padding: 10px 0;
+      color: gold;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.5);
+      display: none;
+      z-index: 50;
+    }
+
+    .overlay.active {
+      display: block;
+    }
+  </style>
+</head>
+<body background="Big bull.jpg">
+
+  <div class="menu-icon" onclick="toggleTray()">☰</div>
+
+  <div class="tray" id="trayMenu">
+    <input type="text" placeholder="Search...">
+    <a href="#">Home</a>
+    <a href="#">Follow</a>
+    <a href="#">Message</a>
+    <a href="#">About</a>
+  </div>
+
+  <div class="overlay" id="overlay" onclick="toggleTray()"></div>
+
+  <header>
+    <h1>2K25</h1>
+  </header>
+
+  <main style="text-align:center; padding: 40px;">
+    <p>Welcome to the 2K25 Student Set Website!✨</p>
+    <p>Stay tuned for more updates and student vibes 😎</p>
+  </main>
+
+  <script>
+    function toggleTray() {
+      const tray = document.getElementById('trayMenu');
+      const overlay = document.getElementById('overlay');
+      tray.classList.toggle('active');
+      overlay.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

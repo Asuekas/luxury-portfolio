@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>BMW X7</title><link rel="stylesheet" href="style.css" /></head>
+<script>
+    window.addEventListener('load', () => {
+      const rev = document.getElementById("revSound");
+      rev.play().catch(e => console.warn("Auto-play blocked by browser 😩:", e));
+    });
+  </script>
+<body class="dark" > <audio id="revSound" src="engine-rev.mp3" preload="auto"></audio>
+    <div class="menu-icon" id="menuIcon">☰</div>
+    <script>
+        window.addEventListener('load', () => {
+          const rev = document.getElementById("revSound");
+          rev.play().catch(e => console.warn("Auto-play blocked by browser 😩:", e));
+        });
+      </script>
+      
+<nav class="tray-nav" id="trayNav">
+  <input type="search" class="search-box" placeholder="Search...">
+  <a href="Luxury_Phantom.html">Home</a>
+  <a href="#">Follow</a>
+  <a href="#">Message</a>
+  <a href="#">About</a>
+</nav>
+<header><h1>BMW X7 M60i</h1><a href="Luxury_Phantom.html" style="color: gold;">← Back</a></header>
+<main style="padding: 40px;">
+<img src="bmw-x7.jpg" alt="BMW X7" style="width:100%;max-width:800px;margin:auto;display:block;border-radius:15px;"/>
+<section><h2 style="color: gold;">Specs</h2>
+<ul><li>Engine: 4.4L TwinPower Turbo V8</li><li>523 hp</li><li>0–60: 4.5s</li><li>Top: 155 mph</li></ul>
+<p>Big body baller. Comfort meets muscle.</p>
+</section></main>
+<footer class="site-footer"><div class="footer-content"><p>&copy; 2025 Luxury Phantom. All rights reserved.</p><p>Contact: <a href="mailto:emylux93@gmail.com">emylux93@gmail.com</a></p><p>Facebook: <a href="https://www.facebook.com/heisemineceidty-x" target="_blank">facebook.com/heisemineceidty-x</a></p></div></footer>
+<script>
+    const menuIcon = document.getElementById('menuIcon');
+    const trayNav = document.getElementById('trayNav');
+  
+    menuIcon.addEventListener('click', () => {
+      trayNav.classList.toggle('open');
+    });
+  </script>
+  </body></html>

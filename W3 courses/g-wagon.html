@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Mercedes G-Wagon</title><link rel="stylesheet" href="style.css" /></head>
+<script>
+    window.addEventListener('load', () => {
+      const rev = document.getElementById("revSound");
+      rev.play().catch(e => console.warn("Auto-play blocked by browser 😩:", e));
+    });
+  </script>
+<body class="dark" > <audio id="revSound" src="engine-rev.mp3" preload="auto"></audio>
+    <script>
+        window.addEventListener('load', () => {
+          const rev = document.getElementById("revSound");
+          rev.play().catch(e => console.warn("Auto-play blocked by browser 😩:", e));
+        });
+      </script>
+      
+    <div class="menu-icon" id="menuIcon">☰</div>
+
+<nav class="tray-nav" id="trayNav">
+  <input type="search" class="search-box" placeholder="Search...">
+  <a href="Luxury_Phantom.html">Home</a>
+  <a href="#">Follow</a>
+  <a href="#">Message</a>
+  <a href="#">About</a>
+</nav>
+<header><h1>Mercedes-Benz G-Wagon AMG G63</h1><a href="Luxury_Phantom.html" style="color: gold;">← Back to Garage</a></header>
+<main style="padding: 40px;">
+<img src="g-wagon.jpg" alt="G-Wagon" style="width:100%;max-width:800px;margin:auto;display:block;border-radius:15px;"/>
+<section><h2 style="color: gold;">Specs</h2>
+<ul><li>Engine: 4.0L V8 Biturbo</li><li>577 hp</li><li>0–60: 4.5s</li><li>Top: 137 mph</li></ul>
+<p>The boss on wheels. Loud, proud, unstoppable.</p>
+</section></main>
+<footer class="site-footer"><div class="footer-content"><p>&copy; 2025 Luxury Phantom. All rights reserved.</p><p>Contact: <a href="mailto:emylux93@gmail.com">emylux93@gmail.com</a></p><p>Facebook: <a href="https://www.facebook.com/heisemineceidty-x" target="_blank">facebook.com/heisemineceidty-x</a></p></div></footer>
+<script>
+    const menuIcon = document.getElementById('menuIcon');
+    const trayNav = document.getElementById('trayNav');
+  
+    menuIcon.addEventListener('click', () => {
+      trayNav.classList.toggle('open');
+    });
+  </script>
+  </body></html>

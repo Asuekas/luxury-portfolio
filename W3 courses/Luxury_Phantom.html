@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luxury Phantom</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<script>
+  window.addEventListener('load', () => {
+    const rev = document.getElementById("revSound");
+    rev.play().catch(e => console.warn("Auto-play blocked by browser 😩:", e));
+  });
+</script>
+
+<body class="dark" >
+  <audio id="revSound" src="engine-rev.mp3" preload="auto"></audio>
+
+
+  <header>
+    <h1>Luxury Phantom</h1>
+    <button id="toggleMode">Toggle Theme</button>
+    <div class="menu-icon" id="menuIcon">☰</div>
+  </header>
+
+  <nav class="tray-nav" id="trayNav">
+    <input type="search" class="search-box" placeholder="Search...">
+    <a href="#home">Home</a>
+    <a href="#">Follow</a>
+    <a href="#">Message</a>
+    <a href="#">About</a>
+  </nav>
+
+  <main>
+    <button id="toggleCurrency" style="padding:10px;margin:20px;background:gold;border:none;border-radius:5px;cursor:pointer;">
+      Switch to £ GBP
+    </button>
+    
+    <section class="cars-section">
+      <h2>Top 10 Luxury SUVs & AMGs</h2>
+      <div class="cars-grid">
+        
+        <a href="g-wagon.html">
+        <div class="car-card">
+            <img src="g-wagon.jpg" alt="G-Wagon"/>
+
+          <div class="info">
+            <h3>Mercedes-Benz G-Wagon AMG G63</h3>
+            <p>Boxy, iconic, and screams power. The ultimate flex vehicle.</p>
+            <p style="font-size:20px;">
+              <strong>Price:</strong> 
+              <span class="price" data-usd="187250" data-gbp="142310"><b>$187,250</b></span>
+            </p>
+            
+          </div>
+        </div>
+      </a>
+      
+        <a href="range-rover.html"><div class="car-card">
+          <img src="range-rover.jpg" alt="Range Rover"/>
+          <div class="info">
+            <h3>Range Rover SV Autobiography</h3>
+            <p>British elegance meets street status. Smooth and powerful.</p>
+            <p style="font-size:20px;">
+              <strong>Price:</strong> 
+              <span class="price" data-usd="200000" data-gbp="152000"><b>$200,000</b></span>
+            </p>
+            
+          </div>
+        </div>
+      </a>
+      
+      <a href="bmw-x7.html"><div class="car-card">
+          <img src="bmw-x7.jpg" alt="BMW X7"/>
+          <div class="info">
+            <h3>BMW X7 M60i</h3>
+            <p>Big body German tank with baller attitude and comfort.</p>
+            <p style="font-size:20px;">
+              <strong>Price:</strong> 
+              <span class="price" data-usd="111900" data-gbp="85044"><b>$111,900</b></span>
+            </p>
+            
+          </div>
+        </div>
+      </a>
+        
+      <a href="urus.html"><div class="car-card">
+          <img src="urus.jpg" alt="Lamborghini Urus"/>
+          <div class="info">
+            <h3>Lamborghini Urus</h3>
+            <p>Exotic, fast, and loud. SUV on Red Bull. Instant head-turner.</p>
+            <p style="font-size:20px;">
+              <strong>Price:</strong> 
+              <span class="price" data-usd="261995" data-gbp="199116"><b>$261,995</b></span>
+            </p>
+            
+          </div>
+        </div>
+      </a>
+
+      <a href="cullinan.html">
+        <div class="car-card">
+          <img src="https://cdn.carbuzz.com/gallery-images/1600/110000/300/110383.jpg" alt="Rolls-Royce Cullinan"/>
+          <div class="info">
+            <h3>Rolls-Royce Cullinan</h3>
+            <p>If a mansion had wheels. Pure elegance and silence.</p>
+            <p style="font-size:20px;">
+              <strong>Price:</strong> 
+              <span class="price" data-usd="410350" data-gbp="311866"><b>$410,350</b></span>
+            </p>
+            
+          </div>
+        </div>
+      </a>
+        
+      <a href="cayenne.html"><div class="car-card">
+          <img src="https://cdn.motor1.com/images/mgl/kLJqX/s3/porsche-cayenne-turbo-gt.jpg" alt="Porsche Cayenne"/>
+          <div class="info">
+            <h3>Porsche Cayenne Turbo GT</h3>
+            <p>Fast, classy, and mean. Porsche's street-sharp SUV.</p>
+            <p style="font-size:20px;">
+              <strong>Price:</strong> 
+              <span class="price" data-usd="205795" data-gbp="156404"><b>$205,795</b></span>
+            </p>
+            
+          </div>
+        </div>
+      </a>
+        
+      <a href="x.html"><div class="car-card">
+          <img src="https://cdn.motor1.com/images/mgl/lQz4N/s3/tesla-model-x.jpg" alt="Tesla Model X"/>
+          <div class="info">
+            <h3>Tesla Model X Plaid</h3>
+            <p>Quiet killer with falcon doors and neck-snapping speed.</p>
+            <p style="font-size:20px;">
+              <strong>Price:</strong> 
+              <span class="price" data-usd="99990" data-gbp="75992"><b>$99,990</b></span>
+            </p>
+            
+          </div>
+        </div>
+      </a>
+
+        <a href="bentayga.html"><div class="car-card">
+          <img src="https://cdn.motor1.com/images/mgl/XVJ1B/s3/2021-bentley-bentayga.jpg" alt="Bentley Bentayga"/>
+          <div class="info">
+            <h3>Bentley Bentayga</h3>
+            <p>Luxury comfort meets serious performance. Boss level SUV.</p>
+            <p style="font-size:20px;">
+              <strong>Price:</strong> 
+              <span class="price" data-usd="207050" data-gbp="157358"><b>$207,050</b></span>
+            </p>
+            
+          </div>
+        </div>
+      </a>
+        
+      <a href="gls 63.html"><div class="car-card">
+          <img src="63 s amg.jpg" alt="GLS 63"/>
+          <div class="info">
+            <h3>Mercedes-AMG GLS 63</h3>
+            <p>Family SUV with AMG growl. Smooth, sharp, and stylish.</p>
+            <p style="font-size:20px;">
+              <strong>Price:</strong> 
+              <span class="price" data-usd="149500" data-gbp="113620"><b>$149,500</b></span>
+            </p>
+            
+          </div>
+        </div>
+      </a>
+
+        <a href="q8.html"><div class="car-card">
+          <img src="https://cdn.motor1.com/images/mgl/Y7xK0/s3/2021-audi-rs-q8.jpg" alt="Audi RS Q8"/>
+          <div class="info">
+            <h3>Audi RS Q8</h3>
+            <p>Quiet flex with insane power. The Urus in a business suit.</p>
+            <p style="font-size:20px;">
+              <strong>Price:</strong> 
+              <span class="price" data-usd="130000" data-gbp="98800"><b>$130,000</b></span>
+            </p>
+            
+          </div>
+        </div>
+      </a>
+
+      </div>
+      
+        <!-- Repeat more car-card divs below... -->
+
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const menuIcon = document.getElementById('menuIcon');
+    const trayNav = document.getElementById('trayNav');
+    menuIcon.addEventListener('click', () => trayNav.classList.toggle('open'));
+
+    // Theme toggle
+    const toggle = document.getElementById('toggleMode');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('light');
+      document.body.classList.toggle('dark');
+    });
+  </script>
+
+<footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Luxury Phantom. All rights reserved.</p>
+      <p>Contact: <a href="mailto:emylux93@gmail.com">emylux93@gmail.com</a></p>
+      <p>Facebook: <a href="https://www.facebook.com/heisemineceidty-x" target="_blank">facebook.com/heisemineceidty-x</a></p>
+    </div>
+  </footer>
+  <script>
+    let currency = "USD";
+    const prices = document.querySelectorAll(".price");
+    const toggleBtn = document.getElementById("toggleCurrency");
+  
+    toggleBtn.addEventListener("click", () => {
+      currency = currency === "USD" ? "GBP" : "USD";
+      prices.forEach(el => {
+        const usd = el.getAttribute("data-usd");
+        const gbp = el.getAttribute("data-gbp");
+        el.innerHTML = currency === "USD" ? `$${usd}` : `£${gbp}`;
+      });
+      toggleBtn.innerHTML = currency === "USD" ? "Switch to £ GBP" : "Switch to $ USD";
+    });
+  </script>
+  
+  
+
+</body>
+</html>
